@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent 使用报告｜学习与日常</title>
+  <meta name="description" content="一份关于 Codex、WorkBuddy、Trae 与 DeepSeek 的个人 AI Agent 使用报告，记录它们如何进入学习、项目与日常。">
+  <meta name="theme-color" content="#f2f0e9">
+  <meta property="og:title" content="AI Agent 使用报告">
+  <meta property="og:description" content="四个工具，四种分工。记录 AI Agent 为学习与日常带来的便利。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%231e2420'/%3E%3Ccircle cx='23' cy='23' r='5' fill='%23f2f0e9'/%3E%3Ccircle cx='41' cy='23' r='5' fill='%23f2f0e9'/%3E%3Ccircle cx='23' cy='41' r='5' fill='%23f2f0e9'/%3E%3Ccircle cx='41' cy='41' r='5' fill='%239db8a9'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="site-header" id="top">
+    <div class="shell nav-shell">
+      <a class="brand" href="#top" aria-label="AI Agent 使用报告首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-text">AI Agent <span class="brand-divider">/</span> <span class="brand-cn">使用报告</span></span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#toolkit">工具</a>
+        <a href="#workflow">方法</a>
+        <a href="#practice">场景</a>
+        <a href="#notes">心得</a>
+      </nav>
+      <span class="nav-year" aria-label="报告年份">2026</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Personal AI Workflow · 2026</p>
+          <h1 id="hero-title"><span class="title-en">AI Agent</span><span class="title-cn">使用报告</span></h1>
+          <p class="hero-lead">我把 AI Agent 放进学习与日常，不是为了多一个聊天窗口，而是为了让想法更快变成可以打开、可以使用、可以继续修改的东西。</p>
+          <div class="hero-actions">
+            <a class="arrow-link" href="#toolkit">从工具开始 <span aria-hidden="true">↓</span></a>
+            <span class="hero-note">4 个工具 · 学习与日常 · 1 套流程</span>
+          </div>
+        </div>
+
+        <aside class="overview" aria-labelledby="overview-title">
+          <div class="overview-head">
+            <h2 id="overview-title">工具速览</h2>
+            <span class="live"><i aria-hidden="true"></i>持续使用中</span>
+          </div>
+          <ol class="agent-list">
+            <li>
+              <a href="#tool-codex">
+                <span class="agent-index">01</span>
+                <span class="agent-name">Codex<small>实现与调试</small></span>
+                <span class="agent-freq">高频</span>
+              </a>
+            </li>
+            <li>
+              <a href="#tool-workbuddy">
+                <span class="agent-index">02</span>
+                <span class="agent-name">WorkBuddy<small>资料与办公</small></span>
+                <span class="agent-freq">常用</span>
+              </a>
+            </li>
+            <li>
+              <a href="#tool-trae">
+                <span class="agent-index">03</span>
+                <span class="agent-name">Trae<small>原型与页面</small></span>
+                <span class="agent-freq">偶尔</span>
+              </a>
+            </li>
+            <li>
+              <a href="#tool-deepseek">
+                <span class="agent-index">04</span>
+                <span class="agent-name">DeepSeek<small>阅读与思考</small></span>
+                <span class="agent-freq">高频</span>
+              </a>
+            </li>
+          </ol>
+          <div class="overview-foot">
+            <span>4 Agents</span>
+            <span>学习 × 项目 × 日常</span>
+          </div>
+        </aside>
+      </div>
+      <div class="shell hero-rule" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="section" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">01</span> Toolkit</p>
+          <div class="section-intro">
+            <h2 id="toolkit-title">四个工具，<br>四种分工。</h2>
+            <p>我不追求“全都用一遍”，而是让每个工具留在最顺手的位置。工具没有绝对的高下，只有是否适合当下的任务。</p>
+          </div>
+        </div>
+
+        <div class="tool-grid">
+          <article class="tool-card tool-card--dark reveal" id="tool-codex">
+            <div class="tool-head">
+              <span class="tool-no">01</span>
+              <span class="tool-badge">高频</span>
+            </div>
+            <div class="tool-body">
+              <h3>Codex</h3>
+              <p class="tool-role">复杂任务的主力</p>
+              <p class="tool-desc">遇到需要真正动手实现的任务，我会先用它。读项目、改文件、运行命令，再把报错逐个解决。它的价值不只是生成代码，而是能在一个完整项目里持续工作。</p>
+            </div>
+            <div class="tool-tags" aria-label="主要用途">
+              <span>代码实现</span><span>调试</span><span>项目协作</span>
+            </div>
+          </article>
+
+          <article class="tool-card reveal" id="tool-workbuddy">
+            <div class="tool-head">
+              <span class="tool-no">02</span>
+              <span class="tool-badge">常用</span>
+            </div>
+            <div class="tool-body">
+              <h3>WorkBuddy</h3>
+              <p class="tool-role">把零散材料收束成结果</p>
+              <p class="tool-desc">更偏向办公与资料处理。把散落的通知、表格和文档放进同一个任务，整理成结构清楚的报告、清单或待办，省掉大量复制粘贴。</p>
+            </div>
+            <div class="tool-tags" aria-label="主要用途">
+              <span>文档整理</span><span>表格</span><span>任务梳理</span>
+            </div>
+          </article>
+
+          <article class="tool-card reveal" id="tool-trae">
+            <div class="tool-head">
+              <span class="tool-no">03</span>
+              <span class="tool-badge">偶尔</span>
+            </div>
+            <div class="tool-body">
+              <h3>Trae</h3>
+              <p class="tool-role">从想法到能点开的原型</p>
+              <p class="tool-desc">适合快速做出一个能看的页面。整体推进时交给 Agent 模式，页面需要细调时切到 IDE 模式。它让“先做一个版本看看”变得很轻。</p>
+            </div>
+            <div class="tool-tags" aria-label="主要用途">
+              <span>网页原型</span><span>界面调整</span><span>快速验证</span>
+            </div>
+          </article>
+
+          <article class="tool-card reveal" id="tool-deepseek">
+            <div class="tool-head">
+              <span class="tool-no">04</span>
+              <span class="tool-badge">高频</span>
+            </div>
+            <div class="tool-body">
+              <h3>DeepSeek</h3>
+              <p class="tool-role">随身的思考搭子</p>
+              <p class="tool-desc">日常使用频率最高的一个。读长文、解释概念、比较方案，或者在我卡住时追问几个问题。它帮我想清楚，而不是替我做决定。</p>
+            </div>
+            <div class="tool-tags" aria-label="主要用途">
+              <span>阅读</span><span>概念解释</span><span>思路讨论</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="workflow" aria-labelledby="workflow-title">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">02</span> Method</p>
+          <div class="section-intro">
+            <h2 id="workflow-title">先想清楚，<br>再做出来。</h2>
+            <p>大多数返工，不是因为工具不够强，而是因为目标没讲明白。我的流程只有四步，但每一步都留出检查的位置。</p>
+          </div>
+        </div>
+
+        <ol class="workflow-grid">
+          <li class="workflow-step reveal">
+            <div class="step-meta"><span class="step-no">01</span><span class="step-tool">DeepSeek</span></div>
+            <h3>先把问题讲清楚</h3>
+            <p>拆概念、列条件、给几种思路。先确认自己真的理解，再让工具开始工作。</p>
+          </li>
+          <li class="workflow-step reveal">
+            <div class="step-meta"><span class="step-no">02</span><span class="step-tool">Codex / Trae</span></div>
+            <h3>做出最小版本</h3>
+            <p>不求一次完整，先求可以运行、可以点击、可以验证。方向对了，再继续扩展。</p>
+          </li>
+          <li class="workflow-step reveal">
+            <div class="step-meta"><span class="step-no">03</span><span class="step-tool">WorkBuddy</span></div>
+            <h3>整理成结果</h3>
+            <p>汇总资料、表格与待办，把过程收束成别人也能看懂的文档或交付物。</p>
+          </li>
+          <li class="workflow-step reveal">
+            <div class="step-meta"><span class="step-no">04</span><span class="step-tool">自己</span></div>
+            <h3>最后再检查一遍</h3>
+            <p>运行、核对来源、重读表达。确认结果可信，才算真正完成。</p>
+          </li>
+        </ol>
+
+        <p class="workflow-summary reveal"><span>一句话分工</span> DeepSeek 帮我想，Codex / Trae 帮我做，WorkBuddy 帮我收尾，最后我自己检查。</p>
+      </div>
+    </section>
+
+    <section class="section" id="practice" aria-labelledby="practice-title">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">03</span> In Practice</p>
+          <div class="section-intro">
+            <h2 id="practice-title">便利，落在<br>具体的小事里。</h2>
+            <p>真正留下来的改变，不是用了多少新工具，而是那些原本费时的小事，开始有了更顺手的做法。</p>
+          </div>
+        </div>
+
+        <div class="practice-grid">
+          <div class="practice-col">
+            <div class="practice-head reveal">
+              <h3>学习</h3>
+              <span>Learning</span>
+            </div>
+            <article class="practice-item reveal">
+              <span class="practice-no">01</span>
+              <div>
+                <h4>读懂一篇难文章</h4>
+                <p>先让 DeepSeek 拆结构、解释术语，再回到原文做笔记。速度快了，理解也更稳。</p>
+              </div>
+            </article>
+            <article class="practice-item reveal">
+              <span class="practice-no">02</span>
+              <div>
+                <h4>完成课程作业</h4>
+                <p>用 Codex 搭框架、查报错、补测试，把时间留给思路和判断，而不是耗在环境配置上。</p>
+              </div>
+            </article>
+            <article class="practice-item reveal">
+              <span class="practice-no">03</span>
+              <div>
+                <h4>准备展示与汇报</h4>
+                <p>从提纲到网页原型，再用 WorkBuddy 整理讲稿和资料，少在格式上反复折腾。</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="practice-col">
+            <div class="practice-head reveal">
+              <h3>日常</h3>
+              <span>Everyday</span>
+            </div>
+            <article class="practice-item reveal">
+              <span class="practice-no">01</span>
+              <div>
+                <h4>整理零散信息</h4>
+                <p>通知、表格、长文变成一份清单，知道今天先做什么、什么可以稍后。</p>
+              </div>
+            </article>
+            <article class="practice-item reveal">
+              <span class="practice-no">02</span>
+              <div>
+                <h4>写清楚一件事</h4>
+                <p>先列提纲、再找反例，最后自己落笔。表达更有条理，也更快进入状态。</p>
+              </div>
+            </article>
+            <article class="practice-item reveal">
+              <span class="practice-no">03</span>
+              <div>
+                <h4>做点小工具</h4>
+                <p>批量整理文件、处理表格、生成页面。重复动作交给脚本，省下的时间做更重要的事。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="notes" aria-labelledby="notes-title">
+      <div class="shell notes-layout">
+        <div class="notes-intro reveal">
+          <p class="section-label"><span class="section-num">04</span> Notes</p>
+          <h2 id="notes-title">越熟悉工具，<br>越知道什么时候<br class="desktop-break">不用它。</h2>
+          <p>工具越顺手，越容易忘记它只是工具。下面四条，是我在反复修改和返工里慢慢形成的习惯。</p>
+        </div>
+
+        <div class="notes-list">
+          <article class="note reveal">
+            <span class="note-no">01</span>
+            <div>
+              <h3>先给目标，再给细节</h3>
+              <p>目标不清楚时，补充再多要求也只是在修补方向。先把“做成什么样”说清楚，再讨论怎么做。</p>
+            </div>
+          </article>
+          <article class="note reveal">
+            <span class="note-no">02</span>
+            <div>
+              <h3>让它先复述</h3>
+              <p>开始前让它复述理解、指出模糊处。一次短暂的确认，往往能省掉一轮大改。</p>
+            </div>
+          </article>
+          <article class="note reveal">
+            <span class="note-no">03</span>
+            <div>
+              <h3>小步验证</h3>
+              <p>每次只改一件事，及时运行、及时看结果。不要等全部完成，才发现方向一开始就错了。</p>
+            </div>
+          </article>
+          <article class="note reveal">
+            <span class="note-no">04</span>
+            <div>
+              <h3>留出判断</h3>
+              <p>AI 可以给选项、给初稿、给解释，但选择和负责的人必须是我。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="boundary" id="boundary" aria-labelledby="boundary-title">
+      <div class="shell boundary-grid">
+        <div class="boundary-quote reveal">
+          <p class="section-label"><span class="section-num">05</span> Boundary</p>
+          <h2 id="boundary-title">AI Agent <br class="mobile-break">缩短的是路径，<br>不是思考。</h2>
+        </div>
+        <div class="boundary-body reveal">
+          <p>它可以替我查资料、写初稿、跑代码，但不能替我决定要做什么，也不能替我对结果负责。用得更久，越需要把这几条放在手边。</p>
+          <dl class="boundary-list">
+            <div>
+              <dt>隐私</dt>
+              <dd>不把敏感信息交给不了解的工具。</dd>
+            </div>
+            <div>
+              <dt>事实</dt>
+              <dd>重要结论回到原始来源核实。</dd>
+            </div>
+            <div>
+              <dt>成果</dt>
+              <dd>最后一遍，自己读、自己跑、自己改。</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <div>
+        <p class="footer-title">AI Agent 使用报告</p>
+        <p class="footer-sub">学习与日常 · 2026</p>
+      </div>
+      <a class="back-top" href="#top">回到顶部 <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="shell footer-bottom">
+      <span>个人使用记录，不构成产品推荐。</span>
+      <span>工具会更新，方法会留下。</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
